@@ -53,16 +53,7 @@
             }
         ?>
     </p>
-
-    <p>Tel: 
-        <?php
-            $tel = get_option('tel');
-            if ($tel) {
-                echo '<a href="tel:' . esc_attr($tel) . '" class="tel">' . esc_html($tel) . '</a>';
-            }
-        ?>
-    </p>
-
+    
     <p>Address: 
         <?php
             $address = get_option('address');

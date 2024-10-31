@@ -14,7 +14,7 @@
         </div>
     <?php endif; ?>
     <header>
-        <div class="column-50">
+        <div class="column-logo">
             <?php
             $site_logo = get_option('site_logo');
             if ($site_logo) {
@@ -23,9 +23,8 @@
             ?>
         </div>
 
-        <div class="column-50">
+        <div class="column-menu">
             <?php
-
             $menu_header = array(
                 'theme_location' => 'huvudmeny',
                 'menu_id' => 'header-menu',
@@ -36,17 +35,15 @@
             ?>
         </div>
 
-        <div class="column-50 menu-icons">
+        <div class="column-icons">
             <?php
-            $menu_header = array(
+            $menu_icons = array(
                 'theme_location' => 'menyikoner',
-                'menu_id' => 'header-menu',
+                'menu_id' => 'header-menu-icons',
                 'container' => 'nav',
                 'container_class' => 'menu menu-nav'
             );
-            wp_nav_menu($menu_header);
+            wp_nav_menu($menu_icons);
             ?>
-            
         </div>
-
     </header>
