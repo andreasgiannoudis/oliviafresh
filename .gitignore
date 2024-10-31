@@ -1,0 +1,11 @@
+/wp-content/debug.log
+/wp-content/themes/OliviaFreshTheme/node_modules
+/wp-content/themes/OliviaFreshTheme/build
+/.vscode
+/wp-content/uploads
+/wp-config.php
+/wp-content/themes/OliviaFreshTheme/vite.config.js
+/wp-content/themes/OliviaFreshTheme/vite.hot.js
+/wp-content/themes/OliviaFreshTheme/package-lock.json
+/wp-content/themes/OliviaFreshTheme/package.json
+.cert

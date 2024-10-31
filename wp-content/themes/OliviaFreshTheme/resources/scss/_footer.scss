@@ -1,0 +1,135 @@
+footer {
+    color: #333;
+    padding: 2rem 0;
+    font-size: 14px;
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .footer-left, .footer-right {
+        flex: 1;
+        margin-bottom: 1.5rem;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+
+    .footer-left {
+        .logo {
+            max-width: 20%;
+            margin-bottom: 1rem;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 1rem;
+
+            .social-icon {
+                
+                font-size: 1.5rem;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-right-1,
+        .footer-right-2 {
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+
+            p {
+                margin: 0.5rem 0;
+            }
+
+            a {
+                color: #333;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #90EE90;
+                }
+            }
+
+            .email,
+            .tel,
+            .address {
+                display: block;
+                margin-top: 0.5rem;
+                font-weight: bold;
+            }
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+
+            #footer_meny {
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    margin: 0.5rem 0;
+                }
+
+                a {
+                    color: #333;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: #90EE90;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.copyright {
+    text-align: center;
+    background-color: $primary-color;
+    color: #fbfbfb;
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: 300;
+
+    @media (max-width: 768px) {
+        font-size: 10px;
+        padding: 0.5rem;
+    }
+}

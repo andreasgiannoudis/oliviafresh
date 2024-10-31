@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: $font-family;
+    background-color: $bg-color;
+}
+
+.content {
+    width: calc(100% - 50px);
+    margin: auto;
+    padding: 20px;
+    background-color: $bg-color;
+    box-sizing: border-box;
+}
+
+
