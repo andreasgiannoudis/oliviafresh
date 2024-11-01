@@ -36,14 +36,21 @@
         </div>
 
         <div class="column-icons">
-            <?php
-            $menu_icons = array(
-                'theme_location' => 'menyikoner',
-                'menu_id' => 'header-menu-icons',
-                'container' => 'nav',
-                'container_class' => 'menu menu-nav'
-            );
-            wp_nav_menu($menu_icons);
-            ?>
-        </div>
+    <?php
+    $menu_icons = array(
+        'theme_location' => 'menyikoner',
+        'menu_id' => 'header-menu-icons',
+        'container' => 'nav',
+        'container_class' => 'menu menu-nav'
+    );
+    wp_nav_menu($menu_icons);
+    ?>
+
+    <a href="<?= wc_get_cart_url(); ?>" class="cart-icon">
+        <?php if (WC()->cart->get_cart_contents_count() > 0) : ?>
+            <span class="cart-count"><?= WC()->cart->get_cart_contents_count(); ?></span>
+        <?php endif; ?>
+    </a>
+</div>
+
     </header>
